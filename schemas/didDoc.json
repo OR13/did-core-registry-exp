@@ -1,0 +1,32 @@
+{
+  "$id": "/did-core.didDocument",
+  "type": "object",
+  "description": "A DID document is the resource that is associated with a decentralized identifier (DID). DID documents typically express verification methods (such as public keys) and services that can be used to interact with a DID controller.",
+  "properties": {
+    "@context": {
+      "title": "@context",
+      "description": "The JSON-LD context of the document.",
+      "anyOf": [
+        { "type": "string" },
+        { "type": "array" },
+        { "type": "object" }
+      ],
+      "required": false
+    },
+    "id": {
+      "title": "DID",
+      "description": "The id of the DID Document",
+      "type": "string",
+      "required": true,
+      "example": ["did:key:z6MksQ35B5bwZDQq4QKuhQW2Sv6dcqwg4PqcSFf67pdgrtjB"]
+    },
+    "publicKey": {
+      "type": "array",
+      "required": true,
+      "items": {
+        "$ref": "did-core.publicKey"
+      }
+    }
+  },
+  "additionalProperties": false
+}

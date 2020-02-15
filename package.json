@@ -1,0 +1,22 @@
+{
+  "name": "did-core-registry-exp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build:markdown": "node ./scripts/build-registry.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/OR13/did-core-registry-exp.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/OR13/did-core-registry-exp/issues"
+  },
+  "homepage": "https://github.com/OR13/did-core-registry-exp#readme",
+  "devDependencies": {
+    "spec-up": "^0.9.38"
+  }
+}
