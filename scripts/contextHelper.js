@@ -2,7 +2,9 @@ const fs = require("fs");
 const path = require("path");
 
 const didDocLatest = fs
-  .readFileSync(path.resolve(__dirname, `../contexts/did-core-latest.jsonld`))
+  .readFileSync(
+    path.resolve(__dirname, `../docs/contexts/did-core-latest.jsonld`)
+  )
   .toString();
 
 const didDocLatestJson = JSON.parse(didDocLatest, null, 2);

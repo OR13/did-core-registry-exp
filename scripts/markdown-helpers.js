@@ -17,13 +17,16 @@ const makeSchemaTitle = ({ schema, level, parent }) => {
     // assume some poorly documented jsonld, try and build a link
     if (!schema.title && !schema.description) {
       const value = contextHelper.find(parent);
-      return `[View JSON-LD Context](${value})`;
+      return `
+- [View JSON-LD Vocabulary](${value})
+- [View JSON-LD Context](https://or13.github.io/did-core-registry-exp/contexts/did-core-latest.jsonld)
+`;
     } else {
       const jsonContextLine = contextHelper.getContextLineNumber(
         "didr:" + parent
       );
       if (jsonContextLine.split("#").pop() !== "L0") {
-        return `[View JSON-LD Context](${jsonContextLine})`;
+        return `- [View JSON-LD On Github](${jsonContextLine})`;
       }
       return "";
     }

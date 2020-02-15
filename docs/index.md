@@ -22,7 +22,7 @@ Example:
 
 A public key is a verification method. Public keys are used for digital signatures, encryption and other cryptographic operations, which in turn are the basis for purposes such as authentication.
 
-[View JSON-LD Context](https://github.com/OR13/did-core-registry-exp/blob/master/contexts/did-core-latest.jsonld#L12)
+- [View JSON-LD On Github](https://github.com/OR13/did-core-registry-exp/blob/master/contexts/did-core-latest.jsonld#L12)
 
 Example:
 
@@ -64,4 +64,5 @@ Example:
 
 This property is defined using JSON-LD.
 
-[View JSON-LD Context](https://w3id.org/security/#EcdsaSecp256k1VerificationKey2019)
+- [View JSON-LD Vocabulary](https://w3id.org/security/#EcdsaSecp256k1VerificationKey2019)
+- [View JSON-LD Context](https://or13.github.io/did-core-registry-exp/contexts/did-core-latest.jsonld)

@@ -6,7 +6,7 @@ const helpers = require("./helpers");
 const loadJsonSchema = name => {
   return JSON.parse(
     fs
-      .readFileSync(path.resolve(__dirname, `../schemas/${name}.json`))
+      .readFileSync(path.resolve(__dirname, `../docs/schemas/${name}.json`))
       .toString()
   );
 };
