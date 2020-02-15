@@ -6,11 +6,13 @@
     "dc": "http://purl.org/dc/terms/",
     "xsd": "http://www.w3.org/2001/XMLSchema#",
     "schema": "http://schema.org/",
-    "didr": "https://w3c.github.io/did-core-registry/#",
+    "didr": "https://or13.github.io/did-core-registry-exp/#",
+    "sec": "https://w3id.org/security/#",
     "publicKey": {
       "@id": "didr:publicKey",
       "@type": "@id",
       "@container": "@set"
-    }
+    },
+    "EcdsaSecp256k1VerificationKey2019": "sec:EcdsaSecp256k1VerificationKey2019"
   }
 }
